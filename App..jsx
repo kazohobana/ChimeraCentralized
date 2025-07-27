@@ -45,7 +45,18 @@ const mockFirebase = {
 const firebase = window.firebase || mockFirebase;
 const { initializeApp, getAuth, signInAnonymously } = firebase;
 const { getFirestore, collection, addDoc, doc, updateDoc, query, onSnapshot, orderBy, serverTimestamp } = firebase.firestore || mockFirebase;
-const firebaseConfig = { apiKey: "AIza...", authDomain: "project.firebaseapp.com", projectId: "project-id" };
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyApMUeZGVS8IuaSMfGKamCZPo3WRB3tHiA",
+  authDomain: "chimeracentralied.firebaseapp.com",
+  projectId: "chimeracentralied",
+  storageBucket: "chimeracentralied.appspot.com",
+  messagingSenderId: "408026144268",
+  appId: "1:408026144268:web:73bfbd84bca889e3a49829",
+  measurementId: "G-QG5F5RGYW3"
+};
+
 
 // --- Error Boundary Component ---
 class ErrorBoundary extends React.Component {
